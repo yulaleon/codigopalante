@@ -105,9 +105,26 @@ nav ul li a {
     text-decoration: none;
 }
 
+section{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.ancla:before {
+    display: block;
+    content: " ";
+    margin-top: -90px;
+    height: 90px;
+    visibility: hidden;
+}
+
+
 /* Recomendaciones! 
 *  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
-*    "estilos generales". Una buena idea sería comenzar por el <body> ;)
+*    "estilos generales". Una buena idea ºría comenzar por el <body> ;)
 *
 *  - Recuerden que queremos evitar "repetir código", en CSS usando la cualidad de la herencia
 *    podemos setear ciertas propiedades en un elemento padre y dejar que sean heredadas (por ejemplo: font-size)
